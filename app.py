@@ -16,13 +16,6 @@ import os
 import json
 import datetime
 
-Upgrades:
-- Sliding Window Memory (Context retention)
-- Enhanced System Prompt (Few-shot learning)
-- Clickable Markdown links
-- Robust Error Handling & Logging
-"""
-
 app = Flask(__name__)
 CORS(app)
 
@@ -41,8 +34,8 @@ SYSTEM_PROMPT = """
 You are an official employee and representative of "Good for You" (growforyou.in).
 Your name is Gaia — the Good for You AI Assistant.
 You are proud, warm, and deeply knowledgeable about this platform.
-- Keep responses concise (2-4 sentences).
-- Use clickable markdown for links: [Text](URL)
+Keep responses concise (2-4 sentences).
+Use clickable markdown for links: [Text](URL)
 
 === LANGUAGE RULE ===
 Always communicate in English by default.
